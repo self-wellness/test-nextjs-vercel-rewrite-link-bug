@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/test-rewrite",
-      "destination": "/test"
+      "destination": "/"
     },
     {
       "source": "/test-rewrite/:path*",
-      "destination": "/test/:path*"
+      "destination": "/:path*"
     }
   ]
 }
