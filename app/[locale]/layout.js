@@ -1,3 +1,4 @@
+import { ClerkProvider } from '@clerk/nextjs'
 import Link from "next/link";
 
 export default function LocaleLayout({
@@ -5,6 +6,7 @@ export default function LocaleLayout({
   params: {locale}
 }) {
   return (
+    <ClerkProvider>
     <html lang={locale}>
       <body>
       <h2>Normal link test</h2>
@@ -24,5 +26,6 @@ export default function LocaleLayout({
       </nav>
       {children}</body>
     </html>
+    </ClerkProvider>
   );
 }
