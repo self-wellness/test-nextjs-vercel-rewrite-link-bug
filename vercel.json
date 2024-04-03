@@ -1,12 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/test-rewrite",
-      "destination": "/"
+      "source": "/:locale/test-rewrite",
+      "destination": "/:locale"
     },
     {
-      "source": "/test-rewrite/:path*",
-      "destination": "/:path*"
+      "source": "/:locale/test-rewrite/:path*",
+      "destination": "/:locale/:path*"
     }
   ]
 }
