@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/:locale/test-rewrite",
+      "destination": "/:locale/test"
+    },
+    {
+      "source": "/:locale/test-rewrite/:path*",
+      "destination": "/:locale/test/:path*"
+    }
+  ]
+}
